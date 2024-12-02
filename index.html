@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Card </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="top-bar">
+      <div class="logo">
+        <img src="images/logo.png" class="logo-img" alt="Company Logo" />
+      </div>
+      <div class="options">
+        <div class="centered-buttons">
+          <div class="button-container">
+            <img src="images/undo.png" class="icon1" alt="Undo Icon" />
+            <span>Undo</span>
+          </div>
+          <div class="button-container">
+            <img src="images/redo.png" class="icon2" alt="Redo Icon" />
+            <span>Redo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="canvas-container">
+      <div id="canvas"></div>
+    </div>
+
+    <div id="text-controls">
+      <select id="font-style">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Trebuchet MS">Trebuchet MS</option>
+        <option value="Comic Sans MS">Comic Sans MS</option>
+        <option value="Impact">Impact</option>
+        <option value="Lucida Console">Lucida Console</option>
+        <option value="Tahoma">Tahoma</option>
+        <option value="Palatino Linotype">Palatino Linotype</option>
+        <option value="Garamond">Garamond</option>
+        <option value="Bookman">Bookman</option>
+        <option value="Arial Black">Arial Black</option>
+        <option value="Segoe UI">Segoe UI</option>
+        <option value="Symbol">Symbol</option>
+      </select>
+
+      <div id="font-size-control">
+        <button id="font-size-btn">
+          <span id="decrease-font">-</span>
+          <span id="font-size">10</span>
+          <span id="increase-font">+</span>
+        </button>
+      </div>
+
+      <button id="bold-btn"><strong>B</strong></button>
+      <button id="italic-btn"><em>I</em></button>
+
+      <button id="align-btn">
+        <img
+          src="images/text-align.png"
+          class="icon3"
+          alt="Text Alignment Icon"
+        />
+      </button>
+
+      <button id="underline-btn"><u>U</u></button>
+    </div>
+
+    <div id="add-text-box">
+      <button id="add-text-btn">T Add Text</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
